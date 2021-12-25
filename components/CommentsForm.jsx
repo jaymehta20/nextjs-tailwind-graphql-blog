@@ -51,14 +51,14 @@ const CommentsForm = ({ slug }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
+    <div className="bg-[#202933] text-white shadow-lg rounded-lg p-8 pb-12 mb-8">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">
         Leave a Reply
       </h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
         <textarea
           ref={commentEl}
-          className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-500 text-gray-300 bg-gray-700"
           name="comment"
           placeholder="Comment"
         ></textarea>
@@ -67,14 +67,14 @@ const CommentsForm = ({ slug }) => {
         <input
           type="text"
           ref={nameEl}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-500 text-gray-300 bg-gray-700"
           placeholder="Name"
           name="name"
         />
         <input
           type="email"
           ref={emailEl}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-500 text-gray-300 bg-gray-700"
           placeholder="Email"
           name="email"
         />
@@ -104,7 +104,7 @@ const CommentsForm = ({ slug }) => {
         <button
           type="button"
           onClick={handleCommentSubmission}
-          className="transition duration-300 ease hover:bg-pink-900 inline-block bg-pink-600 text-lg rounded-full text-white px-8 py-3 cursor-pointer"
+          className="inline-block px-8 py-3 text-lg font-medium text-white transition duration-500 bg-[#b1c3ff62] hover:bg-[#b1c3ff9f] rounded-xl cursor-pointer"
         >
           Post Comment
         </button>
